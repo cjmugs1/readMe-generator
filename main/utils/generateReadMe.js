@@ -8,8 +8,8 @@ const { setContributing } = require('./contributingHandler');
 // Question 1: project title   (name = project title, msg = What is your project called?)
 // Question 2: description                 (section title = Description,    name = description,    msg = "Describe the what, why, and how of your project in a few words.")
 // Question 3: installation instructions   (section title = Installation,   name = installation,   msg = "Provide step by step instructions on installing your project.")
-// Question 4: usage information           (section title = Usage,          name = usage,          msg = "Provide step by step instructions for running and using your project ")
-// Question 5: contribution guidelines     (section title = Contributing,   name = contributing,   msg = "Describe your project in a few words.")
+// Question 4: usage information           (section title = Usage,          name = usage,          msg = "Provide step by step instructions for running and using your project.")
+// Question 5: contribution guidelines     (section title = Contributing,   name = contributing,   msg = "How would you like to tell users how to contribute to your project?")
 // Question 6: test instructions           (section title = License,        name = license,        msg = "Which license would you like to use?")
 // Question 7: github username             (section title = Questions?,     name = username,       msg = "What is your GitHub username?")
 // Question 8: email                       (section title = Questions?,     name = email,          msg = "What is your email? (this will be a point of contact for people with questions about the repo.)
@@ -19,7 +19,9 @@ const { setContributing } = require('./contributingHandler');
 const generateReadMe = async ({ projectTitle, description, installation, usage, contributing, license, gitUsername, email }) => {
 
 contributing = await setContributing(contributing);
+
 licenseBadge = await renderLicenseBadge(license);
+
 license = await setLicense(license);
 
 return `
@@ -56,20 +58,20 @@ ${usage}
 ## Contributing
 *my project's contribution guidelines*  
 <br/>
-${contributing}
+See this projects contribution guidelines ${contributing}
 <br/><br/>
 
 ## License
 *project license*  
 <br/>
-${license}
+See this projects license ${license}
 <br/><br/>
 
-## Questions?
+## Questions
 *questions about this project? contact me with the below*  
-Github Profile: [${gitUsername}](https://github.com/${username})  
-Email: ${email}  
----`
+Github Profile: [${gitUsername}](https://github.com/${gitUsername})  
+Email: ${email}
+`
 };
 
 exports.generateReadMe = generateReadMe;

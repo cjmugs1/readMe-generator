@@ -19,51 +19,64 @@ const readMeGenerator = () => {
 inquirer
   .prompt([
     {
-      type: 'input',
-      name: 'projectTitle',
-      message: 'What is your project called?',
+      type: "input",
+      name: "projectTitle",
+      message: "What is your project called?",
     },
     {
-      type: 'input',
-      name: 'description',
-      message: 'Describe the what, why, and how of your project in a few words.',
+      type: "input",
+      name: "description",
+      message: "Describe the what, why, and how of your project in a few words.",
     },
     {
-      type: 'input',
-      name: 'installation',
-      message: 'What is your favorite hobby?',
+      type: "input",
+      name: "installation",
+      message: "Provide step by step instructions on installing your project.",
     },
     {
-      type: 'input',
-      name: 'usage',
-      message: 'What is your favorite food?',
+      type: "input",
+      name: "usage",
+      message: "Provide step by step instructions for running and using your project.",
     },
     {
-      type: 'input',
-      name: 'contributing',
-      message: 'Enter your GitHub Username',
+      type: "list",
+      name: "contributing",
+      message: "How would you like to tell users how to contribute to your project?",
+      choices: [
+        'Standardized contribution guideline',
+        'Write it myself'
+      ]
     },
     {
-      type: 'input',
-      name: 'license',
-      message: 'Enter your LinkedIn URL.',
+      type: "list",
+      name: "license",
+      message: "Which license would you like to use?",
+      choices: [
+        'MIT License',
+        'Apache License',
+        'GPLv3',
+        'Unlicensed'
+      ]
     },
     {
-        type: 'input',
-        name: 'username',
-        message: 'What is your GitHub username?',
-      },
-      {
-        type: 'input',
-        name: 'email',
-        message: 'What is your email? (this will be a point of contact for people with questions about the repo.)',
-      },
+      type: "input",
+      name: "gitUsername",
+      message: "What is your GitHub username?",
+    },
+    {
+      type: "input",
+      name: "email",
+      message:
+        "What is your email? (this will be a point of contact for people with questions about the repo.)",
+    },
   ])
   .then(async (answers) => {
     const generatedReadMe = await generateReadMe(answers);
 
-    fs.writeFile('sampleReadMe.md', generatedReadMe, (err) =>
-      err ? console.log(err) : console.log('Successfully created your projects README!')
+    fs.writeFile("generatedREADME.md", generatedReadMe, (err) =>
+      err
+        ? console.log(err)
+        : console.log("Successfully created your projects README!")
     );
   });
 }

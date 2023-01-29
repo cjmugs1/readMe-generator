@@ -1,6 +1,6 @@
 const setStdrdContributing = (contributing) => {
-    if (contributing === "") {
-        contributing = "[here](../assets/stdrdContribution.md)"
+    if (contributing === "Standardized contribution guideline") {
+        contributing = "[here](./assets/stdrdContribution.md)"
     }
     return contributing;
 }

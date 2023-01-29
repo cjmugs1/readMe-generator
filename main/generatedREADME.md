@@ -1,9 +1,11 @@
-# Hello
+# Test Project
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 *the what, why, and how of my project:*  
 <br/>
-this is a description
+this project is a test, to show that the readMe generator is working
 <br/><br/>
 
 ## Table of Contents
@@ -17,28 +19,28 @@ this is a description
 ## Installation
 *how to install my project and begin running the development environment:*  
 <br/>
-this is how you install!
+to instal this project, do something.
 <br/><br/>
 
 ## Usage
 *instructions and examples for use.*  
 <br/>
-this is how you use!
+to run this project, do something.
 <br/><br/>
 
 ## Contributing
 *my project's contribution guidelines*  
 <br/>
-this is how you contribute!
+See this projects contribution guidelines [here](./assets/stdrdContribution.md)
 <br/><br/>
 
 ## License
 *project license*  
-this is my license [here](../assets/mitlicense)
+<br/>
+See this projects license [here](./assets/apachelicense)
 <br/><br/>
 
-## Questions?
+## Questions
 *questions about this project? contact me with the below*  
 Github Profile: [cjmugs1](https://github.com/cjmugs1)  
-Email: fakeemail@email.com  
----`
+Email: email@test.com

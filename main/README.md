@@ -1,17 +1,18 @@
-# Professional README Generator Starter Code
-
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-
 # Professional README Generator
-Create a professional readMe in just a minute using the command line!
+[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)  
 
+Create a professional readMe in just a minute using the command line!  
+*This repo comes with a pre-generated README as an example.*
+<br/><br/>
+## Tutorial Video
+[Video Tutorial](https://drive.google.com/file/d/1ETlfXLWqV7UCraP9rFAAc2pe-5x5MqK1/view?usp=share_link)
+<br/><br/>
 ## Challenge Description | User Story
-
-AS A developer  
+### **AS A developer**  
 I WANT a README generator  
 SO THAT I can quickly create a professional README for a new project  
 
-### Acceptance Criteria
+### **Acceptance Criteria**
 
 GIVEN a command-line application that accepts user input  
 WHEN I am prompted for information about my application repository  
@@ -28,8 +29,6 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions  
 WHEN I click on the links in the Table of Contents  
 THEN I am taken to the corresponding section of the README  
-
-## Website Screenshot
-![]();
-
-## Deployed Application
+<br/><br/>
+## Generated README Screenshot
+![generatedREADME](./assets/images/generatedReadMe.JPG);

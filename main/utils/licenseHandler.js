@@ -1,16 +1,16 @@
 const setLicense = (license) => {
     switch (license) {
         case 'MIT License':
-            license = "[here](../assets/mitlicense)"
+            license = "[here](./assets/mitlicense)"
         break;
         case 'Apache License':
-            license = "[here](../assets/apachelicense)"
+            license = "[here](./assets/apachelicense)"
         break;
         case 'GPLv3':
-            license = "[here](../assets/gnugpl3license)"
+            license = "[here](./assets/gnugpl3license)"
         break;
         case 'Unlicensed':
-            license = "[here](../assets/unlicense)"
+            license = "[here](./assets/unlicense)"
         break;
     }
     
@@ -33,9 +33,9 @@ const renderLicenseBadge = (license) => {
             licenseBadge = "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
         break;
     }
-    
     return licenseBadge;
   }
-
+  
   exports.setLicense = setLicense;
   exports.renderLicenseBadge = renderLicenseBadge;
+
